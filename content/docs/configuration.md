@@ -26,7 +26,7 @@ Names do not always follow the object type however, for instance the name for a 
 
 ### Account Codes
 
-Account codes are the numerical representation of the Account object type. Some countries have a reccommended scheme for allocating account codes that is aimed at improving the comparability between financial reports of different entities. For example, revenue accounts codes are numbers between 4000 and 5000 accorking to the German SKR04 scheme. A default scheme is included in the configuration file.
+Account codes are the numerical representation of the Account object type. Some countries have a reccommended scheme for allocating account codes that is aimed at improving the comparability between financial reports of different entities. For example, revenue accounts codes are numbers between 4000 and 5000 according to the German SKR04 scheme. A default scheme is included in the configuration file.
 
 ### Ledger Hashing Algorithm
 

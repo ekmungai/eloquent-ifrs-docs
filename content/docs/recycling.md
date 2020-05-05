@@ -4,7 +4,7 @@ date: 2018-11-28T15:14:39+10:00
 weight: 11
 ---
 
-Recycling referes to the temporary deletion and subsequent restoration of objects in the package. All objects in the package are recyclable. Recycled objects may also be permanently destroyed, but this action does not no remove them from the database but instead only marks them as having been deleted,
+Recycling referes to the temporary deletion and subsequent restoration of objects in the package. All objects in the package are recyclable. Recycled objects may also be permanently destroyed, but this action does not no remove them from the database but instead only marks them as having been destroyed.
 
 ### Attributes
 + `user_id`: The id of the user associated with the recycledObject. Defaults to the id of the logged in user.
@@ -29,7 +29,7 @@ $user = User::create(["email"=>"test@example.com","password"=>"testpassword"]);
 $user->delete();
 ```
 
-This marks the object as deleted, making the object unavailable vie reqular querying functions. It may however be retrieved using the Eloquent `withTrashed()` function. It also creates a `RecycledObject`instance in the database to record the action.
+This marks the object as deleted, making the object unavailable vie regular querying functions. It may however be retrieved using the Eloquent `withTrashed()` function. It also creates a `RecycledObject`instance in the database to record the action.
 
 ```
 $user = User::withTrashed()->where("id",$user_id)->first();

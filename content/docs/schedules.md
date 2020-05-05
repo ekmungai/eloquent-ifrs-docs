@@ -8,17 +8,17 @@ Account Schedules are similar to statements in that the present chronological re
 
 ### Construction
 An AccountSchedule constructor takes the following parameters:
-+ `$account_id`: The id of the Account object whose schedule is being constructed.
-+ `$currency_id`: The the currency of the transactions to be included in the schedule. Defaults to the reporting currency of the entity of the logged in user.
++ `$account_id`: The Id of the Account object whose schedule is being constructed.
++ `$currency_id`: The Id of the currency of the transactions to be included in the schedule. Defaults to the reporting currency of the entity of the logged in user.
 + `$endDate`: The last date on which transactions posted to the account should be included in the schedule. Defaults to the current date.
 
 ### Attributes
-+ `account`: The Account object associated with the schedule.
-+ `entity`: The Entity object associated with the schedule.
-+ `currency`: The currency object associated with the schedule.
-+ `period`: The period (startDate, endDate) covered by the schedule.
-+ `balances`: The opening and closing balances for the schedule.
-+ `transactions`: An array of the transactions included in the schedule each having the transactions attributes in addition to whether the amount was debited or credited to the account as well as the runnning balance.
++ `$schedule->account`: The Account object associated with the schedule.
++ `$schedule->entity`: The Entity object associated with the schedule.
++ `$schedule->currency`: The Currency object associated with the schedule.
++ `$schedule->period`: The period (startDate, endDate) covered by the schedule.
++ `$schedule->balances`: The opening and closing balances for the schedule.
++ `$schedule->transactions`: An array of the transactions included in the schedule each having the transactions attributes in addition to its original amount, cleared amount and uncleared amount.
 
 ### Methods
 + `$schedule->getTransactions():` Fetches the transactions from the database and populates the schedule's transactions array. 

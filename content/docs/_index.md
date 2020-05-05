@@ -7,7 +7,7 @@ heading: 'Getting Started'
 
 The Eloquent IFRS package gives any Laravel application or Lumen API the ability to generate a comprehensive set of financial reports by by providing an embedded double entry bookkeeping system.
 
-The Accounting objects are created with a consistent and fluent interface, allowing seamless integration with the business objects of the parent application.
+The Accounting objects are created with a consistent and fluent interface, allowing seamless integration with the Business objects of the parent application.
 
 While not completely essential, it is highly recommended to consult a qualified Accountant when going through the system setup of the package.
 

@@ -9,7 +9,7 @@ Reporting periods corresponds to the financial years of the entity's operations.
 ### Attributes
 + `period_count`: The period count is an integer that indicates the number of periods the entity has been in operation. It serves as an index to transaction numbers for easy identification and tracing. 
 + `year`: The calendar year corresponding to the reporting period. 
-+ `status`: The status of the period defaults to `ReportingPeriod::OPEN`. 
++ `status`: The status of the period. Defaults to `ReportingPeriod::OPEN`. 
 + `entity_id`: The Id of the entity associated with the reporting period. Defaults to the entity of the logged in user.
 
 ### Relations
@@ -22,8 +22,8 @@ Reporting periods corresponds to the financial years of the entity's operations.
 + `$reportingPeriod->attributes():` Presents the reporting period's attributes as an object. Useful for debugging. 
 
 ### Constants
-+ `ReportingPeriod::OPEN`: An open reporting period is one that is currently having transactions performed in it. 
++ `ReportingPeriod::OPEN`: An open reporting period is one that is currently having transactions posted in it. 
 + `ReportingPeriod::CLOSED`: A closed reporting period is one which has been audited and therefore does not allow any more transactions to be posted. 
-+ `ReportingPeriod::ADJUSTING`: During the adjusting status of a period only transactions that adjust the figures in the reports for audit purposes may be entered.
++ `ReportingPeriod::ADJUSTING`: During the adjusting status of a period only transactions that adjust the figures in the reports for audit purposes may be posted.
 
 ***

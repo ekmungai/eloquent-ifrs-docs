@@ -8,8 +8,8 @@ The entity is the centerpiece around which the transactions in the package are r
 
 ### Attributes
 + `name`: Legal name of the entity.
-+ `currency_id`: Id of the reporting currency object of the entity.
-+ `year_start`: The month during which the financial year for the entity begins expressed as an integer between 1 and 12. Defaults to `1 (January)` .
++ `currency_id`: The Id of the reporting currency object of the entity.
++ `year_start`: The month during which the financial year for the entity begins expressed as an integer between 1 and 12. Defaults to `1` (January).
 + `multi_currency`: A boolean indicating whether the entity engages in transactions denominated in currencies other than the reporting currency. Defaults to `false`.
 
 ### Relations
@@ -18,7 +18,7 @@ The entity is the centerpiece around which the transactions in the package are r
 + `$entity->reportingPeriods:` All reporting periods associated with the entity. 
 
 ### Methods
-+ `$entity->attributes():` Presents the entity's attributes as an object. Useful for debugging. 
 + `$entity->defaultRate():` Retrieves (or creates) the entity's reporing currency exchange rate `(1.00)`. 
++ `$entity->attributes():` Presents the entity's attributes as an object. Useful for debugging. 
 
 ***

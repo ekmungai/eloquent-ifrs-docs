@@ -12,19 +12,19 @@ An IncomeStatement constructor takes the following parameters:
 + `$endDate`: The last date on which account balances should be included in the report. Defaults to the current date.
 
 ### Attributes
-+ `entity`: The Entity object associated with the report.
-+ `reportingPeriod`: The ReportingPeriod object associated with the report.
-+ `period`: The period (startDate, endDate) covered by the report.
-+ `balances`: The closing balances of the accounts in the report.
-+ `accounts`: An array of the accounts included in the report grouped by their categories.
++ `$incomeStatement->entity`: The Entity object associated with the report.
++ `$incomeStatement->reportingPeriod`: The ReportingPeriod object associated with the report.
++ `$incomeStatement->period`: The period (startDate, endDate) covered by the report.
++ `$incomeStatement->balances`: The closing balances of the accounts in the report.
++ `$incomeStatement->accounts`: An array of the accounts included in the report grouped by their categories.
 
 ### Methods
-+ `$incomeStatement->toString():` Prints out a summarized version of the report as a string. !!IMPORTANT!! this method is only intended for debugging and should never be used for production. 
++ `$incomeStatement->toString():` Prints out a summarized version of the report as a string. !!IMPORTANT!! this method is only intended for debugging and should never be used in production. 
 + `$incomeStatement->getSections():` Retrieves the balances of the sections of the report, grouped by the categories therein. 
 + `$incomeStatement->attributes():` Presents the report's attributes as an array. Useful for debugging. 
 
 ### Constants
-+ `IncomeStatement::TITLE`: The title of the report. 
++ `IncomeStatement::TITLE`: The title of the report. Defaults to Income Statement.
 + `IncomeStatement::OPERATING_REVENUES`: The Operating Revenues section of the report. 
 + `IncomeStatement::NON_OPERATING_REVENUES`: The Non Operating Revenues section of the report. 
 + `IncomeStatement::OPERATING_EXPENSES`: The Operating Expenses (Cost of Sales) section of the report. 

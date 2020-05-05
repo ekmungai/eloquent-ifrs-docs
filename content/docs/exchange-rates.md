@@ -9,7 +9,7 @@ If the entity engages in foreign currency transactions, the relative value betwe
 ### Attributes
 + `valid_from`: The date from which the exchange rate is valid.
 + `valid_to`: The date at which the exchange rate ceases to be valid. Defaults to `null`.
-+ `currency_id`: The id of the currency object for the foreign currency.
++ `currency_id`: The Id of the currency object for the foreign currency.
 + `entity_id`: The Id of the entity associated with the exchange rate. Defaults to the the id of entity of the logged in user.
 + `rate`: Rate of exchange between the foreign currency and the reporting currency. Defaults to `1.00`
 

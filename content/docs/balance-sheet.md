@@ -12,20 +12,20 @@ An BalanceSheet constructor takes the following parameters:
 + `$endDate`: The last date on which account balances should be included in the report. Defaults to the current date.
 
 ### Attributes
-+ `entity`: The Entity object associated with the report.
-+ `reportingPeriod`: The ReportingPeriod object associated with the report.
-+ `period`: The period (endDate) covered by the report.
-+ `balances`: The balances for the sections report.
-+ `accounts`: An array of the accounts included in the report grouped by their categories.
++ `$balanceSheet->entity`: The Entity object associated with the report.
++ `$balanceSheet->reportingPeriod`: The ReportingPeriod object associated with the report.
++ `$balanceSheet->period`: The period (endDate) covered by the report.
++ `$balanceSheet->balances`: The balances for the sections report.
++ `$balanceSheet->accounts`: An array of the accounts included in the report grouped by their categories.
 
 ### Methods
-+ `$incomeStatement->toString():` Prints out a summarized version of the report as a string. !!IMPORTANT!! this method is only intended for debugging and should never be used for production. 
-+ `$incomeStatement->getSections():` Retrieves the balances of the sections of the report, grouped by the categories therein. 
-+ `$incomeStatement->attributes():` Presents the report's attributes as an array. Useful for debugging. 
++ `$balanceSheet->toString():` Prints out a summarized version of the report as a string. !!IMPORTANT!! this method is only intended for debugging and should never be used in production. 
++ `$balanceSheet->getSections():` Retrieves the balances of the sections of the report, grouped by the categories therein. 
++ `$balanceSheet->attributes():` Presents the report's attributes as an array. Useful for debugging. 
 
 ### Constants
-+ `IncomeStatement::TITLE`: The title of the report. 
-+ `IncomeStatement::ASSETS`: The Assets section of the report. Includes both Current and Non-current assets. 
-+ `IncomeStatement::LIABILITIES`: The Liabilities section of the report. Includes both Current and Non-current liabilities.
-+ `IncomeStatement::EQUITY`: The Equity section of the report. 
-+ `IncomeStatement::RECONCILIATION`: The Non Reconciliation section of the report. 
++ `BalanceSheet::TITLE`: The title of the report. Defaults to Balance Sheet.
++ `BalanceSheet::ASSETS`: The Assets section of the report. Includes both Current and Non-current assets. 
++ `BalanceSheet::LIABILITIES`: The Liabilities section of the report. Includes both Current and Non-current liabilities.
++ `BalanceSheet::EQUITY`: The Equity section of the report. 
++ `BalanceSheet::RECONCILIATION`: The Reconciliation section of the report. 

@@ -8,21 +8,21 @@ heading: 'Transactions'
 ### Model vs Transaction namespace
  The Classes in the `IFRS\Transactions` extend the Transaction class in the `IFRS\Models` namespace and have validation specific to their types to enforce IFRS classification rules. For example, the main account for a `CashSale` transaction must be of type `Account::BANK`.
 
- Whereas it is possible to create transactions directly from the model, this is not recommended as it would bypass this validation logic.
+ Whereas it is possible to create transactions directly from the model, this is not recommended as it would bypass the validation logic.
 
 ### Attributes
-+ `account_id`: This id of the Main Account of the Transaction. This account will get the total amount of the transaction posted to it.
++ `account_id`: This Id of the Main Account of the Transaction. This account will get the total amount of the transaction posted to it.
 + `date`: The Date(time) of the transaction
 + `narration`: A short description of the purpose of the transaction.
-+ `currency_id`: The id of currency of the transaction, defaults to the reporting currency of the logged in user's entity.
-+ `exchange_rate_id`: The id of the rate of exchange between the reporting currency and the transaction currency valid at the time the transaction was made. Defaults to `1.00 
++ `currency_id`: The Id of the currency of the transaction, defaults to the reporting currency of the logged in user's entity.
++ `exchange_rate_id`: The Id of the rate of exchange between the reporting currency and the transaction currency valid at the time the transaction was made. Defaults to `1.00 
 + `reference`: Optional further idenitifying information about the transaction. For example the LPO Number for a Client Invoice. Defaults to `null`.
-+ `transaction_no`: The transaction number of the transaction. Defaults to a serially generated number of the form `TTYY/XXXXX` where `TT` represents the transaction type, `YY` is the period count for the reporting period in which the transaction date falls, and `XXXXX`is a zero padded count of previously recorded transactions of the same type.
-+ `transaction_type`: The two character string representing the transaction type as defined by the Transaction class. (See Constants).
++ `transaction_no`: The transaction number of the transaction. Defaults to a serially generated number of the form `TTYY/XXXXX`, where `TT` represents the transaction type, `YY` is the period count for the reporting period in which the transaction date falls, and `XXXXX`is a zero padded count of previously recorded transactions of the same type.
++ `transaction_type`: The two character string representing the transaction type as defined by the Transaction class. (See [Constants]({{< relref "#constants" >}})).
 + `credited`: A boolean indicating whether the transaction should be posted in the credit side of the main account.
 + `entity_id`: The Id of the entity associated with the transaction. Defaults to the id of entity of the logged in user.
 
-NB: A transaction is not posted to the Ledger after it has been created. It still has only one side of the double entry and so it requires Line Items to be added to it before it can be posted. (See Line Items).
+NB: A transaction is not posted to the Ledger when it is saved. It still has only one side of the double entry and so it requires Line Items to be added to it before it can be posted. (See [Line Items]({{< relref "line-items.md" >}})).
 
 ### Relations
 + `$transaction->entity:` The entity associated with the transaction. 
@@ -31,7 +31,7 @@ NB: A transaction is not posted to the Ledger after it has been created. It stil
 + `$transaction->account:` The transaction's main account. 
 + `$transaction->exchangeRate:` The transaction's exchange rate. 
 + `$transaction->assignments:` Transactions that have been cleared by (assigned to) this transaction. 
-+ `$transaction->clearances:` Transactions that have been cleared this transaction. 
++ `$transaction->clearances:` Transactions that have been cleared by this transaction. 
 + `$transaction->lineItems:` The LineItem objects associated with the transaction. 
 
 ### Methods
@@ -42,12 +42,12 @@ NB: A transaction is not posted to the Ledger after it has been created. It stil
 + `$transaction->isCredited():` Returns a boolean indicating whether the transaction amount was posted to the credit side of the main account.  
 + `$transaction->getClearedType():` The full name (including path) of the model. Used by the Assignment model.  
 + `$transaction->getAmount():` Returns the total amount of the transaction. 
-+ `$transaction->attributes():` Presents the exchange rate's attributes as an object. Useful for debugging. 
 + `$transaction->getLineItems():` Retrieves LineItem objects associated with the transaction and loads them to its items array. 
-+ `$transaction->addLineItem():` Adds a LineItem object to the transaction and loads them to the transaction's items array. 
-+ `$transaction->removeLineItem():` Removes a LineItem object from the transaction's items array and dissociates. 
++ `$transaction->addLineItem():` Adds a LineItem object to the transaction's items array. 
++ `$transaction->removeLineItem():` Removes a LineItem object from the transaction's items array and dissociates it from the transaction. 
 + `$transaction->post():` Saves all LineItem objects in the transaction's items array, associating them with the transaction and creating the Ledger objects for the transaction. 
 + `$transaction->checkIntegrity():` Confirms that all Ledger objects for the transaction have not been altered. 
++ `$transaction->attributes():` Presents the transactions's attributes as an object. Useful for debugging. 
 
 ### Constants
 + `Transaction::MODELNAME`: The full name (including path) of the Transaction model. 
@@ -74,64 +74,67 @@ NB: A transaction is not posted to the Ledger after it has been created. It stil
 A Cash Sale transaction is used when a sale is made and settled immediately.
 
 ### Constraints
-+ `MainAccount`: Cash Sale Main account must be of type `Account::BANK`
-+ `LineItemAccount`: Cash Sale Line Item accounts must all be of type `Account::OPERATING_REVENUE`
++ `MainAccount`: Cash Sale Main account must be of type `Account::BANK`.
++ `LineItemAccount`: Cash Sale Line Item accounts must all be of type `Account::OPERATING_REVENUE`.
 
 ## Client Invoice
 A Cash Sale transaction is used when a sale is made to be settled later i.e. made on credit.
 
 ### Constraints
-+ `MainAccount`: Client Invoice Main account must be of type `Account::RECEIVABLE`
-+ `LineItemAccount`: Client Invoice Line Item accounts must all be of type `Account::OPERATING_REVENUE`
++ `MainAccount`: Client Invoice Main account must be of type `Account::RECEIVABLE`.
++ `LineItemAccount`: Client Invoice Line Item accounts must all be of type `Account::OPERATING_REVENUE`.
 
 ## Credit Note
-A Credit Note transaction is used to reverse a sale made on credit, either in full or only partially.
+A Credit Note transaction is used to reverse a sale made on credit, either in full or partially.
 
 ### Constraints
-+ `MainAccount`: Credit Note Main account must be of type `Account::RECEIVABLE``
-+ `LineItemAccount`: Credit Note Line Item accounts must all be of type `Account::OPERATING_REVENUE`
++ `MainAccount`: Credit Note Main account must be of type `Account::RECEIVABLE``.
++ `LineItemAccount`: Credit Note Line Item accounts must all be of type `Account::OPERATING_REVENUE`.
 
 ## Client Receipt
 A Client Receipt transaction is used to record payments from clients for sales made on credit.
 
 ### Constraints
-+ `MainAccount`: Client Receipt Main account must be of type `Account::RECEIVABLE`
-+ `LineItemAccount`: Client Receipt Line Item accounts must all be of type `Account::BANK`
++ `MainAccount`: Client Receipt Main account must be of type `Account::RECEIVABLE`.
++ `LineItemAccount`: Client Receipt Line Item accounts must all be of type `Account::BANK`.
++ `VatCharge`: Client Receipt Line Items Vat object rate must be `0`.
 
 ## Cash Purchase
 A Cash Purchase transaction is used when a purchase is made and settled immediately.
 
 ### Constraints
 + `MainAccount`: Cash Purchase Main account must be of type `Account::BANK`
-+ `LineItemAccount`: Cash Purchase Line Item accounts must all be one of `Account::OPERATING_EXPENSE`, `Account::DIRECT_EXPENSE`, `Account::OVERHEAD_EXPENSE, ``Account::OTHER_EXPENSE, ``Account::NON_CURRENT_ASSET`, `Account::CURRENT_ASSET`, `Account::INVENTORY`.
++ `LineItemAccount`: Cash Purchase Line Item accounts must all be one of `Account::OPERATING_EXPENSE`, `Account::DIRECT_EXPENSE`, `Account::OVERHEAD_EXPENSE`, `Account::OTHER_EXPENSE`, `Account::NON_CURRENT_ASSET`, `Account::CURRENT_ASSET`, `Account::INVENTORY`.
 
 ## Supplier Bill
 A Supplier Bill transaction is used when a purchase is made to be settled later i.e. made on credit.
 
 ### Constraints
-+ `MainAccount`: Client Supplier Bill account must be of type `Account::PAYABLE`
-+ `LineItemAccount`: Supplier Bill Line Item accounts must all be one of `Account::OPERATING_EXPENSE`, `Account::DIRECT_EXPENSE`, `Account::OVERHEAD_EXPENSE, ``Account::OTHER_EXPENSE, ``Account::NON_CURRENT_ASSET`, `Account::CURRENT_ASSET`, `Account::INVENTORY`.
++ `MainAccount`: Client Supplier Bill account must be of type `Account::PAYABLE`.
++ `LineItemAccount`: Supplier Bill Line Item accounts must all be one of `Account::OPERATING_EXPENSE`, `Account::DIRECT_EXPENSE`, `Account::OVERHEAD_EXPENSE`, `Account::OTHER_EXPENSE`, `Account::NON_CURRENT_ASSET`, `Account::CURRENT_ASSET`, `Account::INVENTORY`.
 
 ## Debit Note
-A Debit Note transaction is used to reverse a purchase made on credit, either in full or only partially.
+A Debit Note transaction is used to reverse a purchase made on credit, either in full or partially.
 
 ### Constraints
-+ `MainAccount`: Debit Note Bill account must be of type `Account::PAYABLE`
-+ `LineItemAccount`: Debit Note Line Item accounts must all be one of `Account::OPERATING_EXPENSE`, `Account::DIRECT_EXPENSE`, `Account::OVERHEAD_EXPENSE, ``Account::OTHER_EXPENSE, ``Account::NON_CURRENT_ASSET`, `Account::CURRENT_ASSET`, `Account::INVENTORY`.
++ `MainAccount`: Debit Note Bill account must be of type `Account::PAYABLE`.
++ `LineItemAccount`: Debit Note Line Item accounts must all be one of `Account::OPERATING_EXPENSE`, `Account::DIRECT_EXPENSE`, `Account::OVERHEAD_EXPENSE`, `Account::OTHER_EXPENSE`, `Account::NON_CURRENT_ASSET`, `Account::CURRENT_ASSET`, `Account::INVENTORY`.
 
 ## Supplier Payment
 A Supplier Payment transaction is used to record payments from clients for sales made on credit.
 
 ### Constraints
-+ `MainAccount`: Supplier Payment Main account must be of type `Account::PAYABLE`
-+ `LineItemAccount`: Supplier Payment Line Item accounts must all be of type `Account::BANK`
++ `MainAccount`: Supplier Payment Main account must be of type `Account::PAYABLE`.
++ `LineItemAccount`: Supplier Payment Line Item accounts must all be of type `Account::BANK`.
++ `VatCharge`: Supplier Payment Line Items Vat object rate must be `0`.
 
 ## Contra Entry
 A Contra Entry transaction is used to record transfers between bank accounts.
 
 ### Constraints
-+ `MainAccount`: Contra Entry Main account must be of type `Account::BANK`
-+ `LineItemAccount`: Contra Entry Line Item accounts must all be of type `Account::BANK`
++ `MainAccount`: Contra Entry Main account must be of type `Account::BANK`.
++ `LineItemAccount`: Contra Entry Line Item accounts must all be of type `Account::BANK`.
++ `VatCharge`: Contra Entry Line Items Vat object rate must be `0`.
 
 ## Journal Entry
 A Journal Entry transaction is used to create double entries between any arbitrary accounts.

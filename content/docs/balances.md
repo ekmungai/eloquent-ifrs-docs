@@ -8,9 +8,9 @@ Balances represent amounts on Balance Sheet accounts carried over from previous 
 
 ### Attributes
 + `entity_id`: The Id of the entity associated with the balance. Defaults to the entity of the logged in user.
-+ `exchange_rate_id`: In a multicurrency environment, the the id of the Exchange Rate of the Transaction object that originated the balance amount. Defaults to associated entity's default exchange rate id.
-+ `currency_id`: In a multicurrency environment, the id of the currency of the Transaction object that originated the balance amount. Defaults to the entity's reporting currency id.
-+ `account_id`: The id of the account associated with the balance.
++ `exchange_rate_id`: The Id of the Exchange Rate of the Transaction object that originated the balance amount. Defaults to associated entity's default exchange rate id.
++ `currency_id`: The Id of the currency of the Transaction object that originated the balance amount. Defaults to the entity's reporting currency id.
++ `account_id`: The Id of the account associated with the balance.
 + `year`: An integer representing the calendar year of the reporting period the balance pertains to.
 + `transaction_no`: The transaction number from the Transaction object that originated the balance amount.
 + `transaction_type`: The type of the Transaction object that originated the  balance amount. Defaults to `Transaction::JN`.
@@ -38,7 +38,7 @@ Balances represent amounts on Balance Sheet accounts carried over from previous 
 
 ### Constraints
 + `NegativeAmount`: Balance amounts cannot be negative. 
-+ `InvalidBalanceTransaction`: Transaction type must be one of `Transaction::IN`, `Transaction::BL` or `Transaction::JN`. See Transactions for details of Transaction Types.
++ `InvalidBalanceTransaction`: Transaction type must be one of `Transaction::IN`, `Transaction::BL` or `Transaction::JN`. See [Transactions]({{< relref "transactions.md" >}}) for details of Transaction Types.
 + `InvalidBalance`: Balance type must be one of `Balance::DEBIT` or `Balance::CREDIT`.
 + `InvalidAccountClassBalance`: Income Statement accounts cannot have opening balances.
 

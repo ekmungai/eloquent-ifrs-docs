@@ -11,19 +11,15 @@ An TrialBalance
 + `$year`: The year for which account balances should be included in the report. Defaults to the current year.
 
 ### Attributes
-+ `entity`: The Entity object associated with the report.
-+ `reportingPeriod`: The ReportingPeriod object associated with the report.
-+ `balances`: The credit and debit balances for the report.
-+ `accounts`: An array of the accounts included in the report grouped by their categories.
++ `$trialBalance->entity`: The Entity object associated with the report.
++ `$trialBalance->reportingPeriod`: The ReportingPeriod object associated with the report.
++ `$trialBalance->balances`: The credit and debit balances for the report.
++ `$trialBalance->accounts`: An array of the accounts included in the report grouped by their categories.
 
 ### Methods
 + `$trialBalance->toString():` Prints out a summarized version of the report as a string. !!IMPORTANT!! this method is only intended for debugging and should never be used for production. 
-+ `$incomeStatement->getSections():` Retrieves the balances of the sections of the report, grouped by the categories therein. 
-+ `$incomeStatement->attributes():` Presents the report's attributes as an array. Useful for debugging. 
++ `$trialBalance->getSections():` Retrieves the balances of the sections of the report, grouped by the categories therein. 
++ `$trialBalance->attributes():` Presents the report's attributes as an array. Useful for debugging. 
 
 ### Constants
-+ `IncomeStatement::TITLE`: The title of the report. 
-+ `IncomeStatement::ASSETS`: The Assets section of the report. Includes both Current and Non-current assets. 
-+ `IncomeStatement::LIABILITIES`: The Liabilities section of the report. Includes both Current and Non-current liabilities.
-+ `IncomeStatement::EQUITY`: The Equity section of the report. 
-+ `IncomeStatement::RECONCILIATION`: The Non Reconciliation section of the report. 
++ `TrialBalance::TITLE`: The title of the report. Defaults to Trial Balance.
