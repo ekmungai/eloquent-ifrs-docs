@@ -1,4 +1,4 @@
-baseURL = "https://ekmungai.github.io/live-docs/"
+baseURL = "https://ekmungai.github.io/ifrs-docs/"
 languageCode = "en-us"
 title = "Eloquent IFRS"
 themesDir = "themes"
