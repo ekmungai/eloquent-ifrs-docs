@@ -1,6 +1,6 @@
-baseURL = "www.example.com"
+baseURL = "https://ekmungai.github.io/live-docs/"
 languageCode = "en-us"
-title = ""
+title = "Eloquent IFRS"
 themesDir = "themes"
 theme = "hugo-whisper-theme"
 
@@ -26,7 +26,7 @@ summaryLength = 30
   google_analytics_id=""
   homepage_button_link = '/docs'
   homepage_button_text = 'Read The Docs'
-  homepage_intro = 'Laravel IFRS is a Package designed to add full Accounting capability to any Laravel application.'
+  homepage_intro = 'Eloquent IFRS is a Package designed to add full Accounting capability to any Laravel application.'
   homepage_image = ''
 
   ## You can enable to add anchor links to header elements
