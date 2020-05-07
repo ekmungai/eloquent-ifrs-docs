@@ -1,0 +1,1252 @@
+{
+    "name": "IFRS\\Models\\Transaction",
+    "line": 54,
+    "short_desc": "Class Transaction",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Entity",
+                        false
+                    ]
+                ],
+                "entity",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\ExchangeRate",
+                        false
+                    ]
+                ],
+                "exchangeRate",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Account",
+                        false
+                    ]
+                ],
+                "account",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Currency",
+                        false
+                    ]
+                ],
+                "currency",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "date",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "reference",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "transaction_no",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "transaction_type",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "narration",
+                ""
+            ],
+            [
+                [
+                    [
+                        "bool",
+                        false
+                    ]
+                ],
+                "credited",
+                ""
+            ],
+            [
+                [
+                    [
+                        "float",
+                        false
+                    ]
+                ],
+                "amount",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\Transaction.php",
+    "relative_file": null,
+    "hash": "506c019cb7872e9b5bb472254e2d599b6450e0ce",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Carbon": "Carbon\\Carbon",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "Assignable": "IFRS\\Interfaces\\Assignable",
+        "Clearable": "IFRS\\Interfaces\\Clearable",
+        "Assigning": "IFRS\\Traits\\Assigning",
+        "Clearing": "IFRS\\Traits\\Clearing",
+        "Recycling": "IFRS\\Traits\\Recycling",
+        "Segragating": "IFRS\\Traits\\Segragating",
+        "MissingLineItem": "IFRS\\Exceptions\\MissingLineItem",
+        "RedundantTransaction": "IFRS\\Exceptions\\RedundantTransaction",
+        "PostedTransaction": "IFRS\\Exceptions\\PostedTransaction",
+        "HangingClearances": "IFRS\\Exceptions\\HangingClearances",
+        "ClosedReportingPeriod": "IFRS\\Exceptions\\ClosedReportingPeriod",
+        "AdjustingReportingPeriod": "IFRS\\Exceptions\\AdjustingReportingPeriod"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "IFRS\\Interfaces\\Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "IFRS\\Interfaces\\Clearable": "IFRS\\Interfaces\\Clearable",
+        "IFRS\\Interfaces\\Assignable": "IFRS\\Interfaces\\Assignable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Segragating": "IFRS\\Traits\\Segragating",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "IFRS\\Traits\\Recycling": "IFRS\\Traits\\Recycling",
+        "IFRS\\Traits\\Clearing": "IFRS\\Traits\\Clearing",
+        "IFRS\\Traits\\Assigning": "IFRS\\Traits\\Assigning"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 92,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "currency_id",
+                            "attributes": {
+                                "startLine": 93,
+                                "endLine": 93,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 93,
+                            "endLine": 93
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "exchange_rate_id",
+                            "attributes": {
+                                "startLine": 94,
+                                "endLine": 94,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 94,
+                            "endLine": 94
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "account_id",
+                            "attributes": {
+                                "startLine": 95,
+                                "endLine": 95,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 95,
+                            "endLine": 95
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "date",
+                            "attributes": {
+                                "startLine": 96,
+                                "endLine": 96,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 96,
+                            "endLine": 96
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "narration",
+                            "attributes": {
+                                "startLine": 97,
+                                "endLine": 97,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 97,
+                            "endLine": 97
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "reference",
+                            "attributes": {
+                                "startLine": 98,
+                                "endLine": 98,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 98,
+                            "endLine": 98
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "credited",
+                            "attributes": {
+                                "startLine": 99,
+                                "endLine": 99,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 99,
+                            "endLine": 99
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "transaction_type",
+                            "attributes": {
+                                "startLine": 100,
+                                "endLine": 100,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 100,
+                            "endLine": 100
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "transaction_no",
+                            "attributes": {
+                                "startLine": 101,
+                                "endLine": 101,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 101,
+                            "endLine": 101
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 92,
+                    "endLine": 102,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "entity": {
+            "name": "entity",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Entity",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "exchangeRate": {
+            "name": "exchangeRate",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\ExchangeRate",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "account": {
+            "name": "account",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Account",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "currency": {
+            "name": "currency",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Currency",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "date": {
+            "name": "date",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "reference": {
+            "name": "reference",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "transaction_no": {
+            "name": "transaction_no",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "transaction_type": {
+            "name": "transaction_type",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "narration": {
+            "name": "narration",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "credited": {
+            "name": "credited",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "amount": {
+            "name": "amount",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 54,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 107,
+            "short_desc": "Construct new Transaction.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 107,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getType": {
+            "name": "getType",
+            "line": 168,
+            "short_desc": "Get Human Readable Transaction type",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 168,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getTypes": {
+            "name": "getTypes",
+            "line": 180,
+            "short_desc": "Get Human Readable Transaction types",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "types": {
+                    "name": "types",
+                    "line": 180,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "transactionNo": {
+            "name": "transactionNo",
+            "line": 198,
+            "short_desc": "The next Transaction number for the transaction type and date.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 198,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "date": {
+                    "name": "date",
+                    "line": 198,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Carbon\\Carbon",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Carbon",
+                            "Carbon"
+                        ],
+                        "attributes": {
+                            "startLine": 198,
+                            "endLine": 198
+                        }
+                    },
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "lineItems": {
+            "name": "lineItems",
+            "line": 218,
+            "short_desc": "Transaction Saved Line Items.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "ledgers": {
+            "name": "ledgers",
+            "line": 228,
+            "short_desc": "Transaction Ledgers.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "currency": {
+            "name": "currency",
+            "line": 238,
+            "short_desc": "Transaction Currency.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "account": {
+            "name": "account",
+            "line": 248,
+            "short_desc": "Transaction Account.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "exchangeRate": {
+            "name": "exchangeRate",
+            "line": 258,
+            "short_desc": "Transaction Exchange Rate.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "assignments": {
+            "name": "assignments",
+            "line": 268,
+            "short_desc": "Transaction Assignments.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isPosted": {
+            "name": "isPosted",
+            "line": 276,
+            "short_desc": "isPosted analog for Assignment model.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isCredited": {
+            "name": "isCredited",
+            "line": 286,
+            "short_desc": "isCredited analog for Assignment model.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getClearedType": {
+            "name": "getClearedType",
+            "line": 296,
+            "short_desc": "getClearedType analog for Assignment model.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getAmount": {
+            "name": "getAmount",
+            "line": 306,
+            "short_desc": "getAmount analog for Assignment model.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 328,
+            "short_desc": "Transaction attributes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getLineItems": {
+            "name": "getLineItems",
+            "line": 338,
+            "short_desc": "Get Transaction LineItems.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "addLineItem": {
+            "name": "addLineItem",
+            "line": 351,
+            "short_desc": "Add LineItem to Transaction LineItems.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "lineItem": {
+                    "name": "lineItem",
+                    "line": 351,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\LineItem",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "LineItem"
+                        ],
+                        "attributes": {
+                            "startLine": 351,
+                            "endLine": 351
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "removeLineItem": {
+            "name": "removeLineItem",
+            "line": 371,
+            "short_desc": "Remove LineItem from Transaction LineItems.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "lineItem": {
+                    "name": "lineItem",
+                    "line": 371,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\LineItem",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "LineItem"
+                        ],
+                        "attributes": {
+                            "startLine": 371,
+                            "endLine": 371
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 393,
+            "short_desc": "Relate LineItems to Transaction.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 393,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "post": {
+            "name": "post",
+            "line": 424,
+            "short_desc": "Post Transaction to the Ledger.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "delete": {
+            "name": "delete",
+            "line": 438,
+            "short_desc": "Check Transaction Relationships.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "checkIntegrity": {
+            "name": "checkIntegrity",
+            "line": 459,
+            "short_desc": "Check Transaction Integrity.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "MODELNAME": {
+            "name": "MODELNAME",
+            "line": 68,
+            "short_desc": "Transaction Model Name",
+            "long_desc": ""
+        },
+        "CS": {
+            "name": "CS",
+            "line": 76,
+            "short_desc": "Transaction Types",
+            "long_desc": ""
+        },
+        "IN": {
+            "name": "IN",
+            "line": 77,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CN": {
+            "name": "CN",
+            "line": 78,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "RC": {
+            "name": "RC",
+            "line": 79,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CP": {
+            "name": "CP",
+            "line": 80,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "BL": {
+            "name": "BL",
+            "line": 81,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "DN": {
+            "name": "DN",
+            "line": 82,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "PY": {
+            "name": "PY",
+            "line": 83,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CE": {
+            "name": "CE",
+            "line": 84,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "JN": {
+            "name": "JN",
+            "line": 85,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

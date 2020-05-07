@@ -1,0 +1,282 @@
+{
+    "name": "IFRS\\Models\\Category",
+    "line": 31,
+    "short_desc": "Class Category",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Entity",
+                        false
+                    ]
+                ],
+                "entity",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "category_type",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "name",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\Category.php",
+    "relative_file": null,
+    "hash": "78dba7e5ac0dc109500e06961253c326f0ac4b22",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "Segragating": "IFRS\\Traits\\Segragating",
+        "Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "IFRS\\Interfaces\\Recyclable": "IFRS\\Interfaces\\Recyclable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Segragating": "IFRS\\Traits\\Segragating",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "IFRS\\Traits\\Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 42,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "name",
+                            "attributes": {
+                                "startLine": 43,
+                                "endLine": 43,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 43,
+                            "endLine": 43
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "category_type",
+                            "attributes": {
+                                "startLine": 44,
+                                "endLine": 44,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 44,
+                            "endLine": 44
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 42,
+                    "endLine": 45,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "entity": {
+            "name": "entity",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Entity",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "category_type": {
+            "name": "category_type",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "name": {
+            "name": "name",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "accounts": {
+            "name": "accounts",
+            "line": 52,
+            "short_desc": "Category Accounts.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 62,
+            "short_desc": "Category attributes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

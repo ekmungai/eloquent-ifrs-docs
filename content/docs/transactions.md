@@ -67,6 +67,7 @@ NB: A transaction is not posted to the Ledger when it is saved. It still has onl
 + `HangingClearances`: A transaction that has been assigned to clear other transactions cannot be recycled.
 + `RedundantTransaction`: The main account of a transaction cannot be among the accounts in its line items.
 + `PostedTransaction`: Line items cannot be added or removed from a posted transaction.
++ `ClosedReportingPeriod`: Transactions cannot be created for a reporting period that has been closed.
 
 # Transaction Types
 

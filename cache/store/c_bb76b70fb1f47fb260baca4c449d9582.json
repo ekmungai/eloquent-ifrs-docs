@@ -1,0 +1,63 @@
+{
+    "name": "IFRS\\Traits\\Clearing",
+    "line": 16,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "emung"
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Traits",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Traits\\Clearing.php",
+    "relative_file": null,
+    "hash": "d068739de60f2f914d098111981dc970c8c017dc",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "clearedAmount": {
+            "name": "clearedAmount",
+            "line": 21,
+            "short_desc": "Cleared Transaction amount.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "clearances": {
+            "name": "clearances",
+            "line": 35,
+            "short_desc": "Cleared Model records.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\MorphMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

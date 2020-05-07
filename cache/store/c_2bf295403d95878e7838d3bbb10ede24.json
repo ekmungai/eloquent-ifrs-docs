@@ -1,0 +1,75 @@
+{
+    "name": "IFRS\\Transactions\\CreditNote",
+    "line": 21,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Transactions",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Transactions\\CreditNote.php",
+    "relative_file": null,
+    "hash": "a2113982dd27f9f7dd0e155b9c724148feb6c914",
+    "parent": "IFRS\\Models\\Transaction",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Transaction": "IFRS\\Models\\Transaction",
+        "Sells": "IFRS\\Interfaces\\Sells",
+        "Fetchable": "IFRS\\Interfaces\\Fetchable",
+        "Selling": "IFRS\\Traits\\Selling",
+        "Fetching": "IFRS\\Traits\\Fetching",
+        "Assignable": "IFRS\\Interfaces\\Assignable",
+        "Assigning": "IFRS\\Traits\\Assigning"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Sells": "IFRS\\Interfaces\\Sells",
+        "IFRS\\Interfaces\\Fetchable": "IFRS\\Interfaces\\Fetchable",
+        "IFRS\\Interfaces\\Assignable": "IFRS\\Interfaces\\Assignable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Selling": "IFRS\\Traits\\Selling",
+        "IFRS\\Traits\\Fetching": "IFRS\\Traits\\Fetching",
+        "IFRS\\Traits\\Assigning": "IFRS\\Traits\\Assigning",
+        "Parental\\HasParent": "Parental\\HasParent"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 42,
+            "short_desc": "Construct new ContraEntry",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 42,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "PREFIX": {
+            "name": "PREFIX",
+            "line": 35,
+            "short_desc": "Transaction Number prefix",
+            "long_desc": ""
+        }
+    }
+}

@@ -1,0 +1,226 @@
+{
+    "name": "IFRS\\Reports\\BalanceSheet",
+    "line": 15,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Reports",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Reports\\BalanceSheet.php",
+    "relative_file": null,
+    "hash": "a85bd83260b6c9eaafcb484c88b28c21916ce95f",
+    "parent": "IFRS\\Reports\\FinancialStatement",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Carbon": "Carbon\\Carbon",
+        "ReportingPeriod": "IFRS\\Models\\ReportingPeriod"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "period": {
+            "name": "period",
+            "line": 39,
+            "short_desc": "Balance Sheet period.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "endDate",
+                            "attributes": {
+                                "startLine": 40,
+                                "endLine": 40,
+                                "kind": 2
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Expr_ConstFetch",
+                            "name": {
+                                "nodeType": "Name",
+                                "parts": [
+                                    "null"
+                                ],
+                                "attributes": {
+                                    "startLine": 40,
+                                    "endLine": 40,
+                                    "namespacedName": {
+                                        "nodeType": "Name_FullyQualified",
+                                        "parts": [
+                                            "IFRS",
+                                            "Reports",
+                                            "null"
+                                        ],
+                                        "attributes": {
+                                            "startLine": 40,
+                                            "endLine": 40
+                                        }
+                                    }
+                                }
+                            },
+                            "attributes": {
+                                "startLine": 40,
+                                "endLine": 40
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 40,
+                            "endLine": 40
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 39,
+                    "endLine": 41,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 49,
+            "short_desc": "Construct Balance Sheet as at the given end date",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "endDate": {
+                    "name": "endDate",
+                    "line": 49,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 74,
+            "short_desc": "Print Income Statement attributes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getSections": {
+            "name": "getSections",
+            "line": 82,
+            "short_desc": "Get Balance Sheet Sections.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "toString": {
+            "name": "toString",
+            "line": 104,
+            "short_desc": "Print Balance Sheet.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": {
+                "codeCoverageIgnore": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "TITLE": {
+            "name": "TITLE",
+            "line": 22,
+            "short_desc": "Balance Sheet Title",
+            "long_desc": ""
+        },
+        "ASSETS": {
+            "name": "ASSETS",
+            "line": 29,
+            "short_desc": "Balance Sheet Sections",
+            "long_desc": ""
+        },
+        "LIABILITIES": {
+            "name": "LIABILITIES",
+            "line": 30,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "EQUITY": {
+            "name": "EQUITY",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "RECONCILIATION": {
+            "name": "RECONCILIATION",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

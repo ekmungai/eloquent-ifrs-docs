@@ -1,0 +1,505 @@
+{
+    "name": "IFRS\\Models\\ReportingPeriod",
+    "line": 37,
+    "short_desc": "Class ReportingPeriod",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Entity",
+                        false
+                    ]
+                ],
+                "entity",
+                ""
+            ],
+            [
+                [
+                    [
+                        "integer",
+                        false
+                    ]
+                ],
+                "year",
+                ""
+            ],
+            [
+                [
+                    [
+                        "integer",
+                        false
+                    ]
+                ],
+                "period_count",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "status",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\ReportingPeriod.php",
+    "relative_file": null,
+    "hash": "48041ce359cf7909d9a07375a3ad3db9e80e3a5c",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Carbon": "Carbon\\Carbon",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "Segragating": "IFRS\\Traits\\Segragating",
+        "Recycling": "IFRS\\Traits\\Recycling",
+        "MissingReportingPeriod": "IFRS\\Exceptions\\MissingReportingPeriod"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "IFRS\\Interfaces\\Recyclable": "IFRS\\Interfaces\\Recyclable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Segragating": "IFRS\\Traits\\Segragating",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "IFRS\\Traits\\Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 58,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "period_count",
+                            "attributes": {
+                                "startLine": 59,
+                                "endLine": 59,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 59,
+                            "endLine": 59
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "year",
+                            "attributes": {
+                                "startLine": 60,
+                                "endLine": 60,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 60,
+                            "endLine": 60
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "status",
+                            "attributes": {
+                                "startLine": 61,
+                                "endLine": 61,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 61,
+                            "endLine": 61
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 58,
+                    "endLine": 62,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "entity": {
+            "name": "entity",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Entity",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "year": {
+            "name": "year",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "period_count": {
+            "name": "period_count",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "status": {
+            "name": "status",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 67,
+            "short_desc": "Construct new Account.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 67,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "periodCount": {
+            "name": "periodCount",
+            "line": 80,
+            "short_desc": "ReportingPeriod Period Count",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "date": {
+                    "name": "date",
+                    "line": 80,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "year": {
+            "name": "year",
+            "line": 98,
+            "short_desc": "ReportingPeriod year",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "date": {
+                    "name": "date",
+                    "line": 98,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "periodStart": {
+            "name": "periodStart",
+            "line": 113,
+            "short_desc": "ReportingPeriod start string",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "date": {
+                    "name": "date",
+                    "line": 113,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "periodEnd": {
+            "name": "periodEnd",
+            "line": 127,
+            "short_desc": "ReportingPeriod end string",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "date": {
+                    "name": "date",
+                    "line": 127,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 139,
+            "short_desc": "ReportingPeriod attributes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "OPEN": {
+            "name": "OPEN",
+            "line": 49,
+            "short_desc": "Reporting Period Status",
+            "long_desc": ""
+        },
+        "CLOSED": {
+            "name": "CLOSED",
+            "line": 50,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "ADJUSTING": {
+            "name": "ADJUSTING",
+            "line": 51,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

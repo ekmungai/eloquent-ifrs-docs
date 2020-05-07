@@ -1,0 +1,1022 @@
+{
+    "name": "IFRS\\Models\\Account",
+    "line": 44,
+    "short_desc": "Class Account",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Entity",
+                        false
+                    ]
+                ],
+                "entity",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Category",
+                        false
+                    ]
+                ],
+                "category",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Currency",
+                        false
+                    ]
+                ],
+                "currency",
+                ""
+            ],
+            [
+                [
+                    [
+                        "int",
+                        false
+                    ],
+                    [
+                        "null",
+                        false
+                    ]
+                ],
+                "code",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "name",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "description",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "account_type",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "float",
+                        false
+                    ]
+                ],
+                "openingBalance",
+                ""
+            ],
+            [
+                [
+                    [
+                        "float",
+                        false
+                    ]
+                ],
+                "currentBalance",
+                ""
+            ],
+            [
+                [
+                    [
+                        "float",
+                        false
+                    ]
+                ],
+                "closingBalance",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\Account.php",
+    "relative_file": null,
+    "hash": "1ccb3bcaa5f4d0f43190b19bca4840cff73f3c29",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Arr": "Illuminate\\Support\\Arr",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "Segragating": "IFRS\\Traits\\Segragating",
+        "Recycling": "IFRS\\Traits\\Recycling",
+        "MissingAccountType": "IFRS\\Exceptions\\MissingAccountType",
+        "HangingTransactions": "IFRS\\Exceptions\\HangingTransactions",
+        "Carbon": "Carbon\\Carbon"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "IFRS\\Interfaces\\Segragatable": "IFRS\\Interfaces\\Segragatable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Segragating": "IFRS\\Traits\\Segragating",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "IFRS\\Traits\\Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 80,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "name",
+                            "attributes": {
+                                "startLine": 81,
+                                "endLine": 81,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 81,
+                            "endLine": 81
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "account_type",
+                            "attributes": {
+                                "startLine": 82,
+                                "endLine": 82,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 82,
+                            "endLine": 82
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "account_id",
+                            "attributes": {
+                                "startLine": 83,
+                                "endLine": 83,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 83,
+                            "endLine": 83
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "currency_id",
+                            "attributes": {
+                                "startLine": 84,
+                                "endLine": 84,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 84,
+                            "endLine": 84
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "category_id",
+                            "attributes": {
+                                "startLine": 85,
+                                "endLine": 85,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 85,
+                            "endLine": 85
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "code",
+                            "attributes": {
+                                "startLine": 86,
+                                "endLine": 86,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 86,
+                            "endLine": 86
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 80,
+                    "endLine": 87,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "entity": {
+            "name": "entity",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Entity",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "category": {
+            "name": "category",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Category",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "currency": {
+            "name": "currency",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Currency",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "code": {
+            "name": "code",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "name": {
+            "name": "name",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "description": {
+            "name": "description",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "account_type": {
+            "name": "account_type",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "openingBalance": {
+            "name": "openingBalance",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "currentBalance": {
+            "name": "currentBalance",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "closingBalance": {
+            "name": "closingBalance",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 92,
+            "short_desc": "Construct new Account.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 92,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getType": {
+            "name": "getType",
+            "line": 107,
+            "short_desc": "Get Human Readable Account Type.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 107,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getTypes": {
+            "name": "getTypes",
+            "line": 119,
+            "short_desc": "Get Human Readable Account types",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "types": {
+                    "name": "types",
+                    "line": 119,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sectionBalances": {
+            "name": "sectionBalances",
+            "line": 138,
+            "short_desc": "Chart of Account Section Balances for the Reporting Period.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "accountType": {
+                    "name": "accountType",
+                    "line": 139,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "startDate": {
+                    "name": "startDate",
+                    "line": 140,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "endDate": {
+                    "name": "endDate",
+                    "line": 141,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "currency": {
+            "name": "currency",
+            "line": 177,
+            "short_desc": "Account Currency.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "category": {
+            "name": "category",
+            "line": 187,
+            "short_desc": "Account Category.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "balances": {
+            "name": "balances",
+            "line": 197,
+            "short_desc": "Account Balances.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 207,
+            "short_desc": "Account attributes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "openingBalance": {
+            "name": "openingBalance",
+            "line": 220,
+            "short_desc": "Get Account's Opening Balance for the Reporting Period.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "year": {
+                    "name": "year",
+                    "line": 220,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "closingBalance": {
+            "name": "closingBalance",
+            "line": 242,
+            "short_desc": "Get Account's Closing Balance for the Reporting Period.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "startDate": {
+                    "name": "startDate",
+                    "line": 242,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "endDate": {
+                    "name": "endDate",
+                    "line": 242,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 255,
+            "short_desc": "Calculate Account Code.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 255,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "delete": {
+            "name": "delete",
+            "line": 275,
+            "short_desc": "Check for Current Year Transactions.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "NON_CURRENT_ASSET": {
+            "name": "NON_CURRENT_ASSET",
+            "line": 56,
+            "short_desc": "Account Type.",
+            "long_desc": ""
+        },
+        "CONTRA_ASSET": {
+            "name": "CONTRA_ASSET",
+            "line": 57,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "INVENTORY": {
+            "name": "INVENTORY",
+            "line": 58,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "BANK": {
+            "name": "BANK",
+            "line": 59,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CURRENT_ASSET": {
+            "name": "CURRENT_ASSET",
+            "line": 60,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "RECEIVABLE": {
+            "name": "RECEIVABLE",
+            "line": 61,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "NON_CURRENT_LIABILITY": {
+            "name": "NON_CURRENT_LIABILITY",
+            "line": 62,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CONTROL_ACCOUNT": {
+            "name": "CONTROL_ACCOUNT",
+            "line": 63,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CURRENT_LIABILITY": {
+            "name": "CURRENT_LIABILITY",
+            "line": 64,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "PAYABLE": {
+            "name": "PAYABLE",
+            "line": 65,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "EQUITY": {
+            "name": "EQUITY",
+            "line": 66,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "OPERATING_REVENUE": {
+            "name": "OPERATING_REVENUE",
+            "line": 67,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "OPERATING_EXPENSE": {
+            "name": "OPERATING_EXPENSE",
+            "line": 68,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "NON_OPERATING_REVENUE": {
+            "name": "NON_OPERATING_REVENUE",
+            "line": 69,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "DIRECT_EXPENSE": {
+            "name": "DIRECT_EXPENSE",
+            "line": 70,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "OVERHEAD_EXPENSE": {
+            "name": "OVERHEAD_EXPENSE",
+            "line": 71,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "OTHER_EXPENSE": {
+            "name": "OTHER_EXPENSE",
+            "line": 72,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "RECONCILIATION": {
+            "name": "RECONCILIATION",
+            "line": 73,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

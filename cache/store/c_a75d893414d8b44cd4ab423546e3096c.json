@@ -1,0 +1,110 @@
+{
+    "name": "IFRS\\Exceptions\\MainAccount",
+    "line": 14,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Exceptions",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Exceptions\\MainAccount.php",
+    "relative_file": null,
+    "hash": "0edfe0fd881bd9bf3ed1bdae4b3089645be43b30",
+    "parent": "IFRS\\Exceptions\\IFRSException",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Account": "IFRS\\Models\\Account",
+        "Transaction": "IFRS\\Models\\Transaction"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 24,
+            "short_desc": "Main Account Exception",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "transactionType": {
+                    "name": "transactionType",
+                    "line": 24,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "accountType": {
+                    "name": "accountType",
+                    "line": 24,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "message": {
+                    "name": "message",
+                    "line": 24,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "code": {
+                    "name": "code",
+                    "line": 24,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

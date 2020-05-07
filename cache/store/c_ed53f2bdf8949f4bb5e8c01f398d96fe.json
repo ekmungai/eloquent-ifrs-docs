@@ -1,0 +1,69 @@
+{
+    "name": "IFRS\\Traits\\Finding",
+    "line": 17,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "emung"
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Traits",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Traits\\Finding.php",
+    "relative_file": null,
+    "hash": "81db896b57d81479dac0cfac85afd176e3346a17",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "Transaction": "IFRS\\Models\\Transaction"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "find": {
+            "name": "find",
+            "line": 26,
+            "short_desc": "Instantiate IFRS Transaction with Transaction model from the given Id.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Transaction",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 26,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

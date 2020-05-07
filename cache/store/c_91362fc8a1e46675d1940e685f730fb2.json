@@ -1,0 +1,372 @@
+{
+    "name": "IFRS\\Models\\ExchangeRate",
+    "line": 33,
+    "short_desc": "Class ExchangeRate",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Entity",
+                        false
+                    ]
+                ],
+                "entity",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Currency",
+                        false
+                    ]
+                ],
+                "currency",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Carbon",
+                        false
+                    ]
+                ],
+                "valid_from",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Carbon",
+                        false
+                    ]
+                ],
+                "valid_to",
+                ""
+            ],
+            [
+                [
+                    [
+                        "float",
+                        false
+                    ]
+                ],
+                "rate",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\ExchangeRate.php",
+    "relative_file": null,
+    "hash": "de45744d6bebcf961406e4a19bb144e3b2f19c8e",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "Segragating": "IFRS\\Traits\\Segragating",
+        "Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "IFRS\\Interfaces\\Recyclable": "IFRS\\Interfaces\\Recyclable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Segragating": "IFRS\\Traits\\Segragating",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "IFRS\\Traits\\Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 44,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "valid_from",
+                            "attributes": {
+                                "startLine": 45,
+                                "endLine": 45,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 45,
+                            "endLine": 45
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "valid_to",
+                            "attributes": {
+                                "startLine": 46,
+                                "endLine": 46,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 46,
+                            "endLine": 46
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "currency_id",
+                            "attributes": {
+                                "startLine": 47,
+                                "endLine": 47,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 47,
+                            "endLine": 47
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "rate",
+                            "attributes": {
+                                "startLine": 48,
+                                "endLine": 48,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 48,
+                            "endLine": 48
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 44,
+                    "endLine": 49,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "entity": {
+            "name": "entity",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Entity",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "currency": {
+            "name": "currency",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Currency",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "valid_from": {
+            "name": "valid_from",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "valid_to": {
+            "name": "valid_to",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "rate": {
+            "name": "rate",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "currency": {
+            "name": "currency",
+            "line": 56,
+            "short_desc": "Exchange Rate Currency.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 66,
+            "short_desc": "ExchangeRate attributes",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

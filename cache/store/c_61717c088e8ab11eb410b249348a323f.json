@@ -1,0 +1,69 @@
+{
+    "name": "IFRS\\Interfaces\\Findable",
+    "line": 17,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "emung"
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Interfaces",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Interfaces\\Findable.php",
+    "relative_file": null,
+    "hash": "45474e903f4a7cff8451b0ae8bc7d6baa9d23ee7",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": {
+        "Transaction": "IFRS\\Models\\Transaction"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "find": {
+            "name": "find",
+            "line": 26,
+            "short_desc": "Find Transaction by given Id.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Transaction",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 26,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

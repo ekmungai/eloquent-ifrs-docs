@@ -1,0 +1,109 @@
+{
+    "name": "IFRS\\Scopes\\EntityScope",
+    "line": 16,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Scopes",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Scopes\\EntityScope.php",
+    "relative_file": null,
+    "hash": "acbb6c4f2fdb4b28e39cd64fc7bc7d1129b5324f",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Builder": "Illuminate\\Database\\Eloquent\\Builder",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "Scope": "Illuminate\\Database\\Eloquent\\Scope",
+        "Auth": "Illuminate\\Support\\Facades\\Auth"
+    },
+    "errors": [],
+    "interfaces": {
+        "Illuminate\\Database\\Eloquent\\Scope": "Illuminate\\Database\\Eloquent\\Scope"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "apply": {
+            "name": "apply",
+            "line": 25,
+            "short_desc": "Apply the scope to a given Eloquent query builder.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "builder": {
+                    "name": "builder",
+                    "line": 25,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Database\\Eloquent\\Builder",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Database",
+                            "Eloquent",
+                            "Builder"
+                        ],
+                        "attributes": {
+                            "startLine": 25,
+                            "endLine": 25
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "model": {
+                    "name": "model",
+                    "line": 25,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Database\\Eloquent\\Model",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Illuminate",
+                            "Database",
+                            "Eloquent",
+                            "Model"
+                        ],
+                        "attributes": {
+                            "startLine": 25,
+                            "endLine": 25
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

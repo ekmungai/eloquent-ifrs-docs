@@ -1,0 +1,68 @@
+{
+    "name": "IFRS\\Interfaces\\Clearable",
+    "line": 15,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "emung"
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Interfaces",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Interfaces\\Clearable.php",
+    "relative_file": null,
+    "hash": "6d0379e20ce9792323e0f47319f8e5308ceeadd7",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "clearedAmount": {
+            "name": "clearedAmount",
+            "line": 22,
+            "short_desc": "Cleared Transaction amount.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getClearedType": {
+            "name": "getClearedType",
+            "line": 29,
+            "short_desc": "Cleared Object type.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

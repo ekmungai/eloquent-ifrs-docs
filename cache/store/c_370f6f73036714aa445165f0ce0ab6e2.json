@@ -1,0 +1,165 @@
+{
+    "name": "IFRS\\Interfaces\\Fetchable",
+    "line": 20,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "emung"
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Interfaces",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Interfaces\\Fetchable.php",
+    "relative_file": null,
+    "hash": "85a506afe6336bf7551752e1f83e2f8402e86550",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": {
+        "Currency": "IFRS\\Models\\Currency",
+        "Account": "IFRS\\Models\\Account",
+        "Carbon": "Carbon\\Carbon",
+        "Collection": "Illuminate\\Support\\Collection"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "fetch": {
+            "name": "fetch",
+            "line": 27,
+            "short_desc": "Fetch Transaction by given filters.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Support\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "startTime": {
+                    "name": "startTime",
+                    "line": 28,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Carbon\\Carbon",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Carbon",
+                            "Carbon"
+                        ],
+                        "attributes": {
+                            "startLine": 28,
+                            "endLine": 28
+                        }
+                    },
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "endTime": {
+                    "name": "endTime",
+                    "line": 29,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Carbon\\Carbon",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Carbon",
+                            "Carbon"
+                        ],
+                        "attributes": {
+                            "startLine": 29,
+                            "endLine": 29
+                        }
+                    },
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "account": {
+                    "name": "account",
+                    "line": 30,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\Account",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "Account"
+                        ],
+                        "attributes": {
+                            "startLine": 30,
+                            "endLine": 30
+                        }
+                    },
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "currency": {
+                    "name": "currency",
+                    "line": 31,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\Currency",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "Currency"
+                        ],
+                        "attributes": {
+                            "startLine": 31,
+                            "endLine": 31
+                        }
+                    },
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

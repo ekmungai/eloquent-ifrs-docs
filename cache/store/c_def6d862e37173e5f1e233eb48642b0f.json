@@ -1,0 +1,399 @@
+{
+    "name": "IFRS\\Models\\Entity",
+    "line": 32,
+    "short_desc": "Class Entity",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Currency",
+                        false
+                    ]
+                ],
+                "currency",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "name",
+                ""
+            ],
+            [
+                [
+                    [
+                        "bool",
+                        false
+                    ]
+                ],
+                "multi_currency",
+                ""
+            ],
+            [
+                [
+                    [
+                        "integer",
+                        false
+                    ]
+                ],
+                "year_start",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\Entity.php",
+    "relative_file": null,
+    "hash": "e9064f5cedd1ee054fbdc3b42f743f64f63641f3",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Carbon": "Carbon\\Carbon",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Recyclable": "IFRS\\Interfaces\\Recyclable",
+        "Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Recyclable": "IFRS\\Interfaces\\Recyclable"
+    },
+    "traits": {
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "IFRS\\Traits\\Recycling": "IFRS\\Traits\\Recycling"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 42,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "name",
+                            "attributes": {
+                                "startLine": 43,
+                                "endLine": 43,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 43,
+                            "endLine": 43
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "currency_id",
+                            "attributes": {
+                                "startLine": 44,
+                                "endLine": 44,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 44,
+                            "endLine": 44
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "year_start",
+                            "attributes": {
+                                "startLine": 45,
+                                "endLine": 45,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 45,
+                            "endLine": 45
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "multi_currency",
+                            "attributes": {
+                                "startLine": 46,
+                                "endLine": 46,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 46,
+                            "endLine": 46
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 42,
+                    "endLine": 47,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "currency": {
+            "name": "currency",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Currency",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "name": {
+            "name": "name",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "multi_currency": {
+            "name": "multi_currency",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "year_start": {
+            "name": "year_start",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "users": {
+            "name": "users",
+            "line": 54,
+            "short_desc": "Users associated with the reporting Entity.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "currency": {
+            "name": "currency",
+            "line": 64,
+            "short_desc": "Entity's Reporting Currency.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "reportingPeriods": {
+            "name": "reportingPeriods",
+            "line": 74,
+            "short_desc": "Entity's Reporting Periods.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 84,
+            "short_desc": "Entity attributes",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "defaultRate": {
+            "name": "defaultRate",
+            "line": 94,
+            "short_desc": "Reporting Currency Default Rate.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\IFRS\\Models\\ExchangeRate",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

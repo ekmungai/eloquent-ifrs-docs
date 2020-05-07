@@ -1,0 +1,84 @@
+{
+    "name": "IFRS\\Traits\\Selling",
+    "line": 16,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Traits",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Traits\\Selling.php",
+    "relative_file": null,
+    "hash": "902d7643c2be4426a726637a5443842ec95c4c17",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "Account": "IFRS\\Models\\Account",
+        "MainAccount": "IFRS\\Exceptions\\MainAccount",
+        "LineItemAccount": "IFRS\\Exceptions\\LineItemAccount"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "save": {
+            "name": "save",
+            "line": 21,
+            "short_desc": "Validate Selling Transaction Main Account.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 21,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "post": {
+            "name": "post",
+            "line": 33,
+            "short_desc": "Validate Selling Transaction LineItems.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

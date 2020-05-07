@@ -1,0 +1,131 @@
+{
+    "name": "IFRS\\Transactions\\SupplierPayment",
+    "line": 24,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Transactions",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Transactions\\SupplierPayment.php",
+    "relative_file": null,
+    "hash": "1c9ab75f9a13f6e7e157f956296c98852a547e66",
+    "parent": "IFRS\\Models\\Transaction",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Account": "IFRS\\Models\\Account",
+        "Transaction": "IFRS\\Models\\Transaction",
+        "Fetchable": "IFRS\\Interfaces\\Fetchable",
+        "Fetching": "IFRS\\Traits\\Fetching",
+        "MainAccount": "IFRS\\Exceptions\\MainAccount",
+        "LineItemAccount": "IFRS\\Exceptions\\LineItemAccount",
+        "VatCharge": "IFRS\\Exceptions\\VatCharge",
+        "Assignable": "IFRS\\Interfaces\\Assignable",
+        "Assigning": "IFRS\\Traits\\Assigning"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Fetchable": "IFRS\\Interfaces\\Fetchable",
+        "IFRS\\Interfaces\\Assignable": "IFRS\\Interfaces\\Assignable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Fetching": "IFRS\\Traits\\Fetching",
+        "IFRS\\Traits\\Assigning": "IFRS\\Traits\\Assigning",
+        "Parental\\HasParent": "Parental\\HasParent"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 44,
+            "short_desc": "Construct new ContraEntry",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 44,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 55,
+            "short_desc": "Validate SupplierPayment Main Account",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 55,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "post": {
+            "name": "post",
+            "line": 67,
+            "short_desc": "Validate SupplierPayment LineItems",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "PREFIX": {
+            "name": "PREFIX",
+            "line": 37,
+            "short_desc": "Transaction Number prefix",
+            "long_desc": ""
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "name": "IFRS\\Reports\\TrialBalance",
+    "line": 14,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Reports",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Reports\\TrialBalance.php",
+    "relative_file": null,
+    "hash": "fc219a8ba9348f4ea48ac263ff99249d3349adf2",
+    "parent": "IFRS\\Reports\\FinancialStatement",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Account": "IFRS\\Models\\Account",
+        "ReportingPeriod": "IFRS\\Models\\ReportingPeriod"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "reportingPeriod": {
+            "name": "reportingPeriod",
+            "line": 28,
+            "short_desc": "Trial Balance Reporting Period.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "name": {
+                    "nodeType": "Name",
+                    "parts": [
+                        "null"
+                    ],
+                    "attributes": {
+                        "startLine": 28,
+                        "endLine": 28,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "parts": [
+                                "IFRS",
+                                "Reports",
+                                "null"
+                            ],
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28
+                            }
+                        }
+                    }
+                },
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 36,
+            "short_desc": "Construct Trial Balance",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "year": {
+                    "name": "year",
+                    "line": 36,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "string",
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getSections": {
+            "name": "getSections",
+            "line": 49,
+            "short_desc": "Get Trial Balance Sections.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "TITLE": {
+            "name": "TITLE",
+            "line": 21,
+            "short_desc": "Trial Balance Title",
+            "long_desc": ""
+        }
+    }
+}

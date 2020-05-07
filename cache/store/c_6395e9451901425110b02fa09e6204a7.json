@@ -1,0 +1,751 @@
+{
+    "name": "IFRS\\Models\\Ledger",
+    "line": 37,
+    "short_desc": "Class Ledger",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Ekmungai\\Eloquent-IFRS"
+            ]
+        ],
+        "property": [
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Entity",
+                        false
+                    ]
+                ],
+                "entity",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Transaction",
+                        false
+                    ]
+                ],
+                "transaction",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Vat",
+                        false
+                    ]
+                ],
+                "vat",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Account",
+                        false
+                    ]
+                ],
+                "postAccount",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\Account",
+                        false
+                    ]
+                ],
+                "folioAccount",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\IFRS\\Models\\LineItem",
+                        false
+                    ]
+                ],
+                "lineItem",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "date",
+                ""
+            ],
+            [
+                [
+                    [
+                        "string",
+                        false
+                    ]
+                ],
+                "entry_type",
+                ""
+            ],
+            [
+                [
+                    [
+                        "float",
+                        false
+                    ]
+                ],
+                "amount",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "destroyed_at",
+                ""
+            ],
+            [
+                [
+                    [
+                        "\\Carbon\\Carbon",
+                        false
+                    ]
+                ],
+                "deleted_at",
+                ""
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Models",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Models\\Ledger.php",
+    "relative_file": null,
+    "hash": "b0c8d39c6f59c5232eb8cefdb5af61e686b3c257",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Carbon": "Carbon\\Carbon",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes",
+        "Segragatable": "IFRS\\Interfaces\\Segragatable",
+        "Segragating": "IFRS\\Traits\\Segragating"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Segragatable": "IFRS\\Interfaces\\Segragatable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Segragating": "IFRS\\Traits\\Segragating",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 47,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "entry_type",
+                            "attributes": {
+                                "startLine": 48,
+                                "endLine": 48,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 48,
+                            "endLine": 48
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 47,
+                    "endLine": 49,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "entity": {
+            "name": "entity",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Entity",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "transaction": {
+            "name": "transaction",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Transaction",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "vat": {
+            "name": "vat",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Vat",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "postAccount": {
+            "name": "postAccount",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Account",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "folioAccount": {
+            "name": "folioAccount",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\Account",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "lineItem": {
+            "name": "lineItem",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\IFRS\\Models\\LineItem",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "date": {
+            "name": "date",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "entry_type": {
+            "name": "entry_type",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "amount": {
+            "name": "amount",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "destroyed_at": {
+            "name": "destroyed_at",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "post": {
+            "name": "post",
+            "line": 94,
+            "short_desc": "Create Ledger entries for the Transaction.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "transaction": {
+                    "name": "transaction",
+                    "line": 94,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\Transaction",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "Transaction"
+                        ],
+                        "attributes": {
+                            "startLine": 94,
+                            "endLine": 94
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "attributes": {
+            "name": "attributes",
+            "line": 137,
+            "short_desc": "Ledger attributes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "transaction": {
+            "name": "transaction",
+            "line": 147,
+            "short_desc": "Transaction",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "postAccount": {
+            "name": "postAccount",
+            "line": 157,
+            "short_desc": "Ledger Post Account.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasOne",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "folioAccount": {
+            "name": "folioAccount",
+            "line": 167,
+            "short_desc": "Ledger Folio Account.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasOne",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "lineItem": {
+            "name": "lineItem",
+            "line": 177,
+            "short_desc": "Ledger LineItem.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsTo",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "hashed": {
+            "name": "hashed",
+            "line": 187,
+            "short_desc": "Hash Ledger contents",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "save": {
+            "name": "save",
+            "line": 213,
+            "short_desc": "Add Ledger hash.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 213,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "contribution": {
+            "name": "contribution",
+            "line": 233,
+            "short_desc": "Get Account's contribution to the Transaction total amount.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "account": {
+                    "name": "account",
+                    "line": 233,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\Account",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "Account"
+                        ],
+                        "attributes": {
+                            "startLine": 233,
+                            "endLine": 233
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "transactionId": {
+                    "name": "transactionId",
+                    "line": 233,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "int",
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "balance": {
+            "name": "balance",
+            "line": 260,
+            "short_desc": "Get Account's balance as at the given date.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "account": {
+                    "name": "account",
+                    "line": 260,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\IFRS\\Models\\Account",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "IFRS",
+                            "Models",
+                            "Account"
+                        ],
+                        "attributes": {
+                            "startLine": 260,
+                            "endLine": 260
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "startDate": {
+                    "name": "startDate",
+                    "line": 260,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Carbon\\Carbon",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Carbon",
+                            "Carbon"
+                        ],
+                        "attributes": {
+                            "startLine": 260,
+                            "endLine": 260
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "endDate": {
+                    "name": "endDate",
+                    "line": 260,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Carbon\\Carbon",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": {
+                        "nodeType": "Name_FullyQualified",
+                        "parts": [
+                            "Carbon",
+                            "Carbon"
+                        ],
+                        "attributes": {
+                            "startLine": 260,
+                            "endLine": 260
+                        }
+                    },
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

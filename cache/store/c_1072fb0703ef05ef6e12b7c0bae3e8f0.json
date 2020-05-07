@@ -1,0 +1,44 @@
+{
+    "name": "IFRS\\Traits\\Assigning",
+    "line": 16,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "emung"
+            ]
+        ]
+    },
+    "namespace": "IFRS\\Traits",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Traits\\Assigning.php",
+    "relative_file": null,
+    "hash": "622fa03b89d0abb7037a3e3aa9b7bcbed5d21d6e",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "balance": {
+            "name": "balance",
+            "line": 21,
+            "short_desc": "Balance Remaining on Transaction.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

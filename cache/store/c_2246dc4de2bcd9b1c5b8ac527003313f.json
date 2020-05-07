@@ -1,0 +1,72 @@
+{
+    "name": "IFRS\\Traits\\Recycling",
+    "line": 17,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Traits",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Traits\\Recycling.php",
+    "relative_file": null,
+    "hash": "a6174daf7c4ea5e4cca4c2848ba3112d4e4aa0c4",
+    "parent": null,
+    "modifiers": null,
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "Carbon": "Carbon\\Carbon",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "RecycledObject": "IFRS\\Models\\RecycledObject"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "bootRecycling": {
+            "name": "bootRecycling",
+            "line": 26,
+            "short_desc": "Model recycling events.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "codeCoverageIgnore": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "recycled": {
+            "name": "recycled",
+            "line": 69,
+            "short_desc": "Recycled Model records.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\MorphMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

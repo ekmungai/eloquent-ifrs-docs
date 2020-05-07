@@ -1,0 +1,127 @@
+{
+    "name": "IFRS\\Transactions\\ContraEntry",
+    "line": 22,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "IFRS\\Transactions",
+    "file": "C:\\laravel-ifrs-docs\/..\/laravel-ifrs\/src\\Transactions\\ContraEntry.php",
+    "relative_file": null,
+    "hash": "846bc03a9d8e453c99c707a5f08f086bfa02ff33",
+    "parent": "IFRS\\Models\\Transaction",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Account": "IFRS\\Models\\Account",
+        "Transaction": "IFRS\\Models\\Transaction",
+        "Fetchable": "IFRS\\Interfaces\\Fetchable",
+        "Fetching": "IFRS\\Traits\\Fetching",
+        "MainAccount": "IFRS\\Exceptions\\MainAccount",
+        "LineItemAccount": "IFRS\\Exceptions\\LineItemAccount",
+        "VatCharge": "IFRS\\Exceptions\\VatCharge"
+    },
+    "errors": [],
+    "interfaces": {
+        "IFRS\\Interfaces\\Fetchable": "IFRS\\Interfaces\\Fetchable"
+    },
+    "traits": {
+        "IFRS\\Traits\\Fetching": "IFRS\\Traits\\Fetching",
+        "Parental\\HasParent": "Parental\\HasParent"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 41,
+            "short_desc": "Construct new ContraEntry",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 41,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 52,
+            "short_desc": "Validate ContraEntry Main Account",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 52,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "post": {
+            "name": "post",
+            "line": 64,
+            "short_desc": "Validate ContraEntry LineItems",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "PREFIX": {
+            "name": "PREFIX",
+            "line": 34,
+            "short_desc": "Transaction Number prefix",
+            "long_desc": ""
+        }
+    }
+}
