@@ -28,6 +28,10 @@ Names do not always follow the object type however, for instance the name for a 
 
 Account codes are the numerical representation of the Account object type. Some countries have a reccommended scheme for allocating account codes that is aimed at improving the comparability between financial reports of different entities. For example, revenue accounts codes are numbers between 4000 and 5000 according to the German SKR04 scheme. A default scheme is included in the configuration file.
 
+### Aging Schedule Brackets
+
+These are the time chunks into which the outstanding balances for client receivables and supplier paybles are split. A default segmentation is included in the configuration file.
+
 ### Ledger Hashing Algorithm
 
 Eloquent IFRS hashes the contents of the Ledger to maintain transactional integrity. The algorithm used for this process can be set by changing the value of `hashing_algorithm`. This value defaults to PHP's internal `PASSWORD_DEFAULT` 
