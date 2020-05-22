@@ -13,9 +13,10 @@ An AgingSchedule constructor takes the following parameters:
 + `$endDate`: The last date on which outstanding balances should be included in the report. Defaults to the current date.
 
 ### Attributes
-+ `$incomeStatement->entity`: The Entity object associated with the report.
-+ `$incomeStatement->balances`: The total outstanding balances in the time segments in the report.
-+ `$incomeStatement->accounts`: An array of the accounts included in the report with thier contribution to the outstanding balances in the time segments in the report.
++ `$agingSchedule->entity`: The Entity object associated with the report.
++ `$agingSchedule->currency`: The Currency object associated with the report.
++ `$agingSchedule->balances`: The total outstanding balances in the time segments in the report.
++ `$agingSchedule->accounts`: An array of the accounts included in the report with thier contribution to the outstanding balances in the time segments in the report.
 
 ### Methods
-+ `$incomeStatement->attributes():` Presents the report's attributes as an array. Useful for debugging. 
++ `$agingSchedule->attributes():` Presents the report's attributes as an array. Useful for debugging. 
